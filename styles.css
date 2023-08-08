@@ -1,1 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: none;
+    width: 30%;
+    height: 90vh;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.cal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
+}
+
+.cal-head a{
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cal-head a:hover {
+    color: blue;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.input-box {
+    width: 95%;
+    height: 10em;
+    margin: 1em auto;
+    background-color: white;
+    border-radius: 50px 10px;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.col {
+    background-color: white;
+    height: 7.5em;
+    width: 20%;
+    border-radius: 10px;
+}
+
+.col-equal {
+    background-color: white;
+    height: 7.5em;
+    width: 45%;
+    border-radius: 10px;
+}
+ 
+.equal {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: normal;
+
+}
+
+.col h1 {
+    text-align: center;
+    margin-top: 30%;
+}
