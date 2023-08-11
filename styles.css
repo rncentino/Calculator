@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,13 +16,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
     border: none;
-    width: 30%;
-    height: 90vh;
-    background-color: #eee;
+    width: 32%;
+    height: 95vh;
+    background-color: #1c1c1c;
     border-radius: 10px;
 }
 
@@ -39,47 +42,74 @@ body {
 }
 
 .cal-head a:hover {
-    color: blue;
+    color: #ff9500;
     text-decoration: underline;
     transition: .3s;
 }
 
 .input-box {
-    width: 95%;
-    height: 10em;
-    margin: 1em auto;
-    background-color: white;
-    border-radius: 50px 10px;
+    margin: 2em;
+    width: 90%;
 }
 
-.rows {
+input[type='text']{ 
+    width: 100%;
+    padding: .5em;
+    font-size: 40px;
+    background-color: #505050;
+    border-radius: 50px 10px;
+    text-align: right;
+    color: #ff9500;
+    font-weight: 700;
+    border: 2px solid #ff9500;
+    cursor: default;
+}
+
+::placeholder {
+    color: #ff9500;
+}
+
+.row {
     display: flex;
     justify-content: space-around;
-    margin-top: 1em;
+    align-items: center;
 }
 
-.col {
-    background-color: white;
-    height: 7.5em;
-    width: 20%;
-    border-radius: 10px;
+input[type='button'] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 70px;
+    height:70px;
+    border: none;
+    background-color: #d4d4d2;
+    color: #1c1c1c;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 20px;
 }
 
-.col-equal {
-    background-color: white;
-    height: 7.5em;
-    width: 45%;
-    border-radius: 10px;
-}
- 
-.equal {
-    text-align: center;
-    font-size: 6rem;
-    font-weight: normal;
-
+input[type='button']:hover, button:hover {
+    color: #ff9500;
+    background-color: #1c1c1c;
+    border: 1px solid #ff9500;
+    transition: .3s;
 }
 
-.col h1 {
-    text-align: center;
-    margin-top: 30%;
+.reset-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 95%;
+    height: 70px;
+    border-radius: 20px;
+    border: none;color: #1c1c1c;
+    background-color: #d4d4d2;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
 }
